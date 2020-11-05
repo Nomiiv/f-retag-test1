@@ -1,0 +1,53 @@
+:root {
+  --orange: #f46036;
+  --steel: #5b85aa;
+  --purple: #414770;
+  --violet: #372238;
+  --dark: #171123;
+}
+body {
+  background: var(--dark);
+  display: grid;
+  grid-template-columns: 2fr repeat(7, 1fr);
+  grid-template-rows: 2fr repeat(5, 1fr) 3fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin: 0%;
+}
+#title {
+  font-size: 3em;
+  margin-top: 0%;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  grid-column-start: 1;
+  grid-column-end: five;
+  grid-row-start: 0;
+  grid-row-end: 1;
+  background: var(--purple);
+}
+nav p {
+  display: inline-block;
+}
+nav p a {
+  text-decoration: none;
+  color: var(--orange);
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  transition: all 0.5s ease 0s;
+}
+nav p :hover {
+  background-color: var(--dark);
+}
+nav {
+  background-color: var(--violet);
+}
+.textbox {
+  color: white;
+  background-color: var(--violet);
+}
