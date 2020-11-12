@@ -6,7 +6,8 @@
   --dark: #171123;
 }
 body {
-  background: var(--dark);
+  font-family: font-family: "Roboto Slab", serif;
+  background: var(white);
   display: grid;
   grid-template-columns: 2fr repeat(7, 1fr);
   grid-template-rows: 2fr repeat(5, 1fr) 3fr;
@@ -48,6 +49,18 @@ nav {
   background-color: var(--violet);
 }
 .textbox {
-  color: white;
+  color: var(--orange);
+  font-weight: 900;
+  font-size: 2rem;
   background-color: var(--violet);
+  border-radius: 8px;
+  padding: 8px;
+}
+.imageContainer {
+  background-color: var(--steel);
+  border-radius: 8px;
+  padding: 16px;
+}
+.image {
+  padding: 8px;
 }
