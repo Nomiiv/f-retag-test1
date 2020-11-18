@@ -1,13 +1,12 @@
 $(function () {
   $(".multiple-items").slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
     centerMode: true,
-    centerPadding: "0",
+    slidesToShow: 3,
+    slidesToScroll: 1,
     arrows: true,
     autoplay: true,
     autoplaySpeed: 2000,
+    variableWidth: true,
     prevArrow:
       "<img class='a-left control-c prev slick-prev' src='pic/left.png'>",
     nextArrow:
@@ -17,17 +16,13 @@ $(function () {
         breakpoint: 768,
         settings: {
           arrows: false,
-          centerMode: true,
-          centerPadding: "0",
-          slidesToShow: 2,
+          slidesToShow: 1,
         },
       },
       {
         breakpoint: 480,
         settings: {
           arrows: false,
-          centerMode: true,
-          centerPadding: "0",
           slidesToShow: 1,
         },
       },

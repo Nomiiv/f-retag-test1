@@ -7,8 +7,9 @@
 }
 body {
   font-family: font-family "Roboto Slab", serif;
-  background: var(white);
   margin: 0%;
+  background-color: var(--violet);
+  
 }
 #title {
   font-size: 3em;
@@ -16,13 +17,10 @@ body {
   color: white;
   display: flex;
   justify-content: center;
+  padding-bottom: 2rem;
 }
 
 header {
-  grid-column-start: 1;
-  grid-column-end: five;
-  grid-row-start: 0;
-  grid-row-end: 1;
   background: var(--purple);
 }
 nav p {
@@ -30,58 +28,89 @@ nav p {
 }
 nav p a {
   text-decoration: none;
-  color: var(--orange);
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  color: white;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   transition: all 0.5s ease 0s;
 }
 nav p :hover {
-  background-color: var(--dark);
+  background-color: var(--orange);
 }
 nav {
-  background-color: var(--violet);
+  background-color: var(--dark);
 }
-.textbox {
-  color: var(--orange);
-  font-weight: 900;
-  font-size: 2rem;
-  background-color: var(--violet);
-  border-radius: 8px;
-  padding: 8px;
-}
-.imageContainer {
-  background-color: var(--steel);
-  border-radius: 8px;
-  padding: 16px;
-}
-.image {
-  padding: 8px;
-}
+
+
 .slideshow {
   display: flex;
+  padding-top: 2rem;
+  padding-bottom: 5%;
 }
 .slideshow .slide {
   width: 250px;
-  height: 350px;
-  margin: 50px;
+  height: 390px;
 }
 .slideshow .slide img {
   width: 250px;
-  height: 350px;
+  height: 390px;
 }
-.imageContainer {
-  display: none;
+#main-list {
+  padding-left: 5%;
+  padding-right: 5%;
+  border-radius: 16px;
+
 }
 .prev {
   display: block;
   max-height: 20%;
   width: 10%;
 }
-
 .next {
   display: block;
   max-height: 20%;
   max-width: 10%;
+}
+.pair {
+  display:flex;
+  float: left;
+}    
+.pair a {
+  background: var(--purple);
+  padding: 3rem;
+  text-decoration: none;
+  max-width: 18rem;
+}
+.pair a img{
+max-width: 100%;
+}
+
+
+.textbox {
+  color: var(--orange);
+  font-weight: 900;
+  font-size: 2rem;
+  background-color: var(--violet);
+  padding: 5%;
+  border-radius: 8px;
+}
+
+#membership img{
+  max-width: 20%;
+  border: black;
+  float: right;
+}
+
+@media screen and (max-width: 480px) {
+  #main-list {
+    padding-left: 4%;
+    padding-right: 2%;
+  } 
+  .pair a {
+    padding: 8px;
+  }
+  .pair a img{
+    max-width: 8rem;
+  }
 }
