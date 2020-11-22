@@ -74,7 +74,7 @@ nav {
 .main-list {
   display: flex;
   flex-wrap: wrap;
-  padding: 1rem;
+  justify-content: center;
   background-color: var(--purple);
   border-radius: 18px;
   padding-top: 5rem;
@@ -218,9 +218,6 @@ footer ul {
     }
   }
   @media only screen and (max-width: 850px) {
-      #main-list a {
-        padding-left: 20px;
-      }
       .option {
         padding-left: 30vw;
         display: inline-block;
