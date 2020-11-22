@@ -56,12 +56,12 @@ nav {
   padding-bottom: 5%;
 }
 .slideshow .slide {
-  width: 250px;
-  height: 390px;
+  width: 251px;
+  height: 396px;
 }
 .slideshow .slide img {
-  width: 250px;
-  height: 390px;
+  width: 251px;
+  height: 396px;
 }
 
 .prev,
@@ -83,7 +83,6 @@ nav {
   clip-path: polygon(0 0, 100% 0%, 100% 93%, 0 97%);
 }
 .main-list a {
-max-width: 18rem;
 padding-left: 10px;
 }
 
@@ -156,7 +155,6 @@ a {
   font-size: 1.5rem;
   font-family: Arial, Helvetica, sans-serif;
 }
-
 .member-option {
   display: flex;
 }
@@ -169,6 +167,10 @@ a {
 }
 .option a{
   color: white;
+}
+.option li{
+  color: white;
+  list-style: none;
 }
 .option h3 {
   text-decoration: underline;
@@ -184,7 +186,6 @@ footer h4 {
   opacity: 90%;
   font-size: 2rem;
 }
-
 footer ul {
   display: flex;
   display: inline-block;
@@ -217,10 +218,6 @@ footer ul {
     }
   }
   @media only screen and (max-width: 850px) {
-      #main-list {
-        padding: 0rem;
-        padding-top: 1rem;
-      }
       #main-list a {
         padding-left: 20px;
       }
@@ -242,5 +239,8 @@ footer ul {
       }
       .product img{
         width: 20vw;
+      }
+      .footer {
+        font-size: 1px;
       }
     }
