@@ -82,9 +82,6 @@ nav {
   padding-bottom: 20rem;
   clip-path: polygon(0 0, 100% 0%, 100% 93%, 0 97%);
 }
-.main-list a {
-padding-left: 10px;
-}
 
 #manga, #light-novel{
 display: flex;
